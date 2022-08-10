@@ -1,0 +1,57 @@
+.completeList {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+}
+
+.containerT {
+  padding-top: 8rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info {
+  border: 1px solid black;
+  padding-left: 10px;
+  border-radius: 5px 5px 0 0;
+}
+
+#newToDo,
+.clear {
+  padding: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.toDo,
+.clear {
+  display: flex;
+  border: 1px solid black;
+
+  /* width: 20vw; */
+}
+
+#inputBox {
+  width: 19.65vw;
+}
+
+.toDo p {
+  margin-left: 1rem;
+}
+
+#checkB {
+  margin-left: 20px;
+}
+
+.clear {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(233, 235, 238);
+  border-radius: 0 0 5px 5px;
+}
