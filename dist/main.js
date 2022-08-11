@@ -2,6 +2,31 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/delcomplete.js":
+/*!****************************!*\
+  !*** ./src/delcomplete.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ delButAll)
+/* harmony export */ });
+function delButAll() {
+  removeCompleted.addEventListener('click', function () {
+    var temp = myToDolist.ToDo.filter(function (_ref) {
+      var doneBox = _ref.doneBox;
+      return !doneBox;
+    });
+    myToDolist.SetToDo(temp);
+    myToDolist.reorder();
+    myToDolist.SaveToDolistLocal();
+    render();
+  });
+}
+
+/***/ }),
+
 /***/ "./src/toDos.js":
 /*!**********************!*\
   !*** ./src/toDos.js ***!
@@ -722,7 +747,9 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ "./src/style.css");
 /* harmony import */ var _toDos_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./toDos.js */ "./src/toDos.js");
+/* harmony import */ var _delcomplete_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./delcomplete.js */ "./src/delcomplete.js");
 // import _ from 'lodash';
+
 
 
 var removeCompleted = document.querySelector('.removeCompleted');
@@ -808,17 +835,13 @@ button.addEventListener('click', function () {
   myToDolist.SaveToDolistLocal();
   titletextbox.value = '';
   render();
-});
-removeCompleted.addEventListener('click', function () {
-  var temp = myToDolist.ToDo.filter(function (_ref) {
-    var doneBox = _ref.doneBox;
-    return !doneBox;
-  });
-  myToDolist.SetToDo(temp);
-  myToDolist.reorder();
-  myToDolist.SaveToDolistLocal();
-  render();
-});
+}); // removeCompleted.addEventListener('click', () => {
+//   const temp = myToDolist.ToDo.filter(({ doneBox }) => !doneBox);
+//   myToDolist.SetToDo(temp);
+//   myToDolist.reorder();
+//   myToDolist.SaveToDolistLocal();
+//   render();
+// });
 })();
 
 /******/ })()
