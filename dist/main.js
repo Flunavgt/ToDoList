@@ -2,6 +2,116 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/toDos.js":
+/*!**********************!*\
+  !*** ./src/toDos.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ ToDolist)
+/* harmony export */ });
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+function _classPrivateFieldInitSpec(obj, privateMap, value) { _checkPrivateRedeclaration(obj, privateMap); privateMap.set(obj, value); }
+
+function _checkPrivateRedeclaration(obj, privateCollection) { if (privateCollection.has(obj)) { throw new TypeError("Cannot initialize the same private elements twice on an object"); } }
+
+function _classPrivateFieldGet(receiver, privateMap) { var descriptor = _classExtractFieldDescriptor(receiver, privateMap, "get"); return _classApplyDescriptorGet(receiver, descriptor); }
+
+function _classApplyDescriptorGet(receiver, descriptor) { if (descriptor.get) { return descriptor.get.call(receiver); } return descriptor.value; }
+
+function _classPrivateFieldSet(receiver, privateMap, value) { var descriptor = _classExtractFieldDescriptor(receiver, privateMap, "set"); _classApplyDescriptorSet(receiver, descriptor, value); return value; }
+
+function _classExtractFieldDescriptor(receiver, privateMap, action) { if (!privateMap.has(receiver)) { throw new TypeError("attempted to " + action + " private field on non-instance"); } return privateMap.get(receiver); }
+
+function _classApplyDescriptorSet(receiver, descriptor, value) { if (descriptor.set) { descriptor.set.call(receiver, value); } else { if (!descriptor.writable) { throw new TypeError("attempted to set read only private field"); } descriptor.value = value; } }
+
+var _toDo = /*#__PURE__*/new WeakMap();
+
+var ToDolist = /*#__PURE__*/function () {
+  function ToDolist() {
+    _classCallCheck(this, ToDolist);
+
+    _classPrivateFieldInitSpec(this, _toDo, {
+      writable: true,
+      value: void 0
+    });
+
+    _classPrivateFieldSet(this, _toDo, []);
+  } // Setters
+
+
+  _createClass(ToDolist, [{
+    key: "SetToDo",
+    value: function SetToDo(toDo) {
+      _classPrivateFieldSet(this, _toDo, toDo);
+    } // Getter
+
+  }, {
+    key: "ToDo",
+    get: function get() {
+      return _classPrivateFieldGet(this, _toDo);
+    }
+  }, {
+    key: "reorder",
+    value: function reorder() {
+      for (var index = 0; index < _classPrivateFieldGet(this, _toDo).length; index += 1) {
+        _classPrivateFieldGet(this, _toDo)[index].id = index;
+      }
+    } // editToDo(id, activity, doneBox) {
+    // }
+    // Methods
+
+  }, {
+    key: "AddToDo",
+    value: function AddToDo(activity, doneBox) {
+      var id = _classPrivateFieldGet(this, _toDo).length;
+
+      _classPrivateFieldGet(this, _toDo).push({
+        activity: activity,
+        doneBox: doneBox,
+        id: id
+      });
+    }
+  }, {
+    key: "DeleteToDo",
+    value: function DeleteToDo(id) {
+      // const localToDo = this.#toDo;
+      _classPrivateFieldGet(this, _toDo).splice(id, 1);
+    }
+  }, {
+    key: "SaveToDolistLocal",
+    value: function SaveToDolistLocal() {
+      localStorage.setItem('toDo', JSON.stringify(_classPrivateFieldGet(this, _toDo)));
+    }
+  }, {
+    key: "LoadToDoFromLocal",
+    value: function LoadToDoFromLocal() {
+      var savedToDo = JSON.parse(localStorage.getItem('toDo'));
+
+      if (Array.isArray(savedToDo)) {
+        _classPrivateFieldSet(this, _toDo, savedToDo);
+
+        return true;
+      }
+
+      return false;
+    }
+  }]);
+
+  return ToDolist;
+}();
+
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/style.css":
 /*!*************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./src/style.css ***!
@@ -611,107 +721,56 @@ var __webpack_exports__ = {};
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ "./src/style.css");
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-
-function _classPrivateFieldInitSpec(obj, privateMap, value) { _checkPrivateRedeclaration(obj, privateMap); privateMap.set(obj, value); }
-
-function _checkPrivateRedeclaration(obj, privateCollection) { if (privateCollection.has(obj)) { throw new TypeError("Cannot initialize the same private elements twice on an object"); } }
-
-function _classPrivateFieldGet(receiver, privateMap) { var descriptor = _classExtractFieldDescriptor(receiver, privateMap, "get"); return _classApplyDescriptorGet(receiver, descriptor); }
-
-function _classApplyDescriptorGet(receiver, descriptor) { if (descriptor.get) { return descriptor.get.call(receiver); } return descriptor.value; }
-
-function _classPrivateFieldSet(receiver, privateMap, value) { var descriptor = _classExtractFieldDescriptor(receiver, privateMap, "set"); _classApplyDescriptorSet(receiver, descriptor, value); return value; }
-
-function _classExtractFieldDescriptor(receiver, privateMap, action) { if (!privateMap.has(receiver)) { throw new TypeError("attempted to " + action + " private field on non-instance"); } return privateMap.get(receiver); }
-
-function _classApplyDescriptorSet(receiver, descriptor, value) { if (descriptor.set) { descriptor.set.call(receiver, value); } else { if (!descriptor.writable) { throw new TypeError("attempted to set read only private field"); } descriptor.value = value; } }
-
+/* harmony import */ var _toDos__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./toDos */ "./src/toDos.js");
 // import _ from 'lodash';
 
+ // class ToDolist {
+// #toDo;
+// constructor() {
+//   this.#toDo = [];
+// }
+// // Setters
+// SetToDo(toDo) {
+//   this.#toDo = toDo;
+// }
+// // Getter
+// get ToDo() {
+//   return this.#toDo;
+// }
+// reorder() {
+//   for (let index = 0; index < this.#toDo.length; index += 1) {
+//     this.#toDo[index].id = index;
+//   }
+// }
+// // editToDo(id, activity, doneBox) {
+// // }
+// // Methods
+// AddToDo(activity, doneBox) {
+//   const id = this.#toDo.length;
+//   this.#toDo.push({
+//     activity,
+//     doneBox,
+//     id,
+//   });
+// }
+// DeleteToDo(id) {
+//   // const localToDo = this.#toDo;
+//   this.#toDo.splice(id, 1);
+// }
+// SaveToDolistLocal() {
+//   localStorage.setItem('toDo', JSON.stringify(this.#toDo));
+// }
+// LoadToDoFromLocal() {
+//   const savedToDo = JSON.parse(localStorage.getItem('toDo'));
+//   if (Array.isArray(savedToDo)) {
+//     this.#toDo = savedToDo;
+//     return true;
+//   }
+//   return false;
+// }
+// }
 
-var _toDo = /*#__PURE__*/new WeakMap();
-
-var ToDolist = /*#__PURE__*/function () {
-  function ToDolist() {
-    _classCallCheck(this, ToDolist);
-
-    _classPrivateFieldInitSpec(this, _toDo, {
-      writable: true,
-      value: void 0
-    });
-
-    _classPrivateFieldSet(this, _toDo, []);
-  } // Setters
-
-
-  _createClass(ToDolist, [{
-    key: "SetToDo",
-    value: function SetToDo(toDo) {
-      _classPrivateFieldSet(this, _toDo, toDo);
-    } // Getter
-
-  }, {
-    key: "ToDo",
-    get: function get() {
-      return _classPrivateFieldGet(this, _toDo);
-    }
-  }, {
-    key: "reorder",
-    value: function reorder() {
-      for (var index = 0; index < _classPrivateFieldGet(this, _toDo).length; index += 1) {
-        _classPrivateFieldGet(this, _toDo)[index].id = index;
-      }
-    } // editToDo(id, activity, doneBox) {
-    // }
-    // Methods
-
-  }, {
-    key: "AddToDo",
-    value: function AddToDo(activity, doneBox) {
-      var id = _classPrivateFieldGet(this, _toDo).length;
-
-      _classPrivateFieldGet(this, _toDo).push({
-        activity: activity,
-        doneBox: doneBox,
-        id: id
-      });
-    }
-  }, {
-    key: "DeleteToDo",
-    value: function DeleteToDo(id) {
-      var localToDo = _classPrivateFieldGet(this, _toDo);
-
-      _classPrivateFieldGet(this, _toDo).splice(id, 1);
-    }
-  }, {
-    key: "SaveToDolistLocal",
-    value: function SaveToDolistLocal() {
-      localStorage.setItem('toDo', JSON.stringify(_classPrivateFieldGet(this, _toDo)));
-    }
-  }, {
-    key: "LoadToDoFromLocal",
-    value: function LoadToDoFromLocal() {
-      var savedToDo = JSON.parse(localStorage.getItem('toDo'));
-
-      if (Array.isArray(savedToDo)) {
-        _classPrivateFieldSet(this, _toDo, savedToDo);
-
-        return true;
-      }
-
-      return false;
-    }
-  }]);
-
-  return ToDolist;
-}();
-
-var myToDolist = new ToDolist();
+var myToDolist = new _toDos__WEBPACK_IMPORTED_MODULE_1__["default"]();
 myToDolist.LoadToDoFromLocal();
 
 function modificarBox(index, valor) {
@@ -747,7 +806,7 @@ var render = function render() {
       inputTask.style.textDecoration = 'line-through';
     }
 
-    inputTask.addEventListener('change', function (event) {
+    inputTask.addEventListener('change', function () {
       // if (event.key === 'Enter'){
       modifyDescription(index, inputTask.value); // }
     });
@@ -762,7 +821,7 @@ var render = function render() {
     });
     List.appendChild(element); // Remove Button
 
-    var deleteButton = document.createElement('button');
+    var deleteButton = document.createElement('button'); // eslint-disable-next-line
 
     function deleteToDo() {
       var idToDelete = deleteButton.id;
