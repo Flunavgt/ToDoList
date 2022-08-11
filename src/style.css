@@ -5,7 +5,6 @@ body {
 }
 
 .newList {
-  /* border: 1px solid black; */
   border-radius: 5px;
   width: 30vw;
   box-shadow: 3px 3px 5px 5px lightgray;
@@ -18,7 +17,6 @@ body {
 
 .top {
   display: flex;
-  /* padding: 10px; */
   border-bottom: 1px solid black;
 }
 
@@ -37,11 +35,9 @@ body {
 
 .ToDoList {
   list-style-type: none;
-  /* padding-left: 0; */
   padding: 0;
   margin: 0;
 }
-
 
 .ToDoList li {
   text-decoration: none;
@@ -51,7 +47,7 @@ body {
   padding: 10px;
 }
 
-.remove button{
+.remove button {
   padding: 10px;
   width: 30vw;
   color: rgb(148, 145, 145);

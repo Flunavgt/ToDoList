@@ -21,7 +21,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "body {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\n.newList {\n  /* border: 1px solid black; */\n  border-radius: 5px;\n  width: 30vw;\n  box-shadow: 3px 3px 5px 5px lightgray;\n}\n\n.today {\n  padding: 10px;\n  border-bottom: 1px solid black;\n}\n\n.top {\n  display: flex;\n  /* padding: 10px; */\n  border-bottom: 1px solid black;\n}\n\n#eye {\n  background-color: white;\n  border: none;\n  margin-right: 10px;\n  padding: 10px 20px 10px 20px;\n}\n\n#activity {\n  border: none;\n  width: 28vw;\n  padding: 10px;\n}\n\n.ToDoList {\n  list-style-type: none;\n  /* padding-left: 0; */\n  padding: 0;\n  margin: 0;\n}\n\n\n.ToDoList li {\n  text-decoration: none;\n  display: flex;\n  justify-content: space-between;\n  border-bottom: 1px solid gray;\n  padding: 10px;\n}\n\n.remove button{\n  padding: 10px;\n  width: 30vw;\n  color: rgb(148, 145, 145);\n  border: none;\n}", "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;AACrB;;AAEA;EACE,6BAA6B;EAC7B,kBAAkB;EAClB,WAAW;EACX,qCAAqC;AACvC;;AAEA;EACE,aAAa;EACb,8BAA8B;AAChC;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,8BAA8B;AAChC;;AAEA;EACE,uBAAuB;EACvB,YAAY;EACZ,kBAAkB;EAClB,4BAA4B;AAC9B;;AAEA;EACE,YAAY;EACZ,WAAW;EACX,aAAa;AACf;;AAEA;EACE,qBAAqB;EACrB,qBAAqB;EACrB,UAAU;EACV,SAAS;AACX;;;AAGA;EACE,qBAAqB;EACrB,aAAa;EACb,8BAA8B;EAC9B,6BAA6B;EAC7B,aAAa;AACf;;AAEA;EACE,aAAa;EACb,WAAW;EACX,yBAAyB;EACzB,YAAY;AACd","sourcesContent":["body {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\n.newList {\n  /* border: 1px solid black; */\n  border-radius: 5px;\n  width: 30vw;\n  box-shadow: 3px 3px 5px 5px lightgray;\n}\n\n.today {\n  padding: 10px;\n  border-bottom: 1px solid black;\n}\n\n.top {\n  display: flex;\n  /* padding: 10px; */\n  border-bottom: 1px solid black;\n}\n\n#eye {\n  background-color: white;\n  border: none;\n  margin-right: 10px;\n  padding: 10px 20px 10px 20px;\n}\n\n#activity {\n  border: none;\n  width: 28vw;\n  padding: 10px;\n}\n\n.ToDoList {\n  list-style-type: none;\n  /* padding-left: 0; */\n  padding: 0;\n  margin: 0;\n}\n\n\n.ToDoList li {\n  text-decoration: none;\n  display: flex;\n  justify-content: space-between;\n  border-bottom: 1px solid gray;\n  padding: 10px;\n}\n\n.remove button{\n  padding: 10px;\n  width: 30vw;\n  color: rgb(148, 145, 145);\n  border: none;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "body {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\n.newList {\n  border-radius: 5px;\n  width: 30vw;\n  box-shadow: 3px 3px 5px 5px lightgray;\n}\n\n.today {\n  padding: 10px;\n  border-bottom: 1px solid black;\n}\n\n.top {\n  display: flex;\n  border-bottom: 1px solid black;\n}\n\n#eye {\n  background-color: white;\n  border: none;\n  margin-right: 10px;\n  padding: 10px 20px 10px 20px;\n}\n\n#activity {\n  border: none;\n  width: 28vw;\n  padding: 10px;\n}\n\n.ToDoList {\n  list-style-type: none;\n  padding: 0;\n  margin: 0;\n}\n\n.ToDoList li {\n  text-decoration: none;\n  display: flex;\n  justify-content: space-between;\n  border-bottom: 1px solid gray;\n  padding: 10px;\n}\n\n.remove button {\n  padding: 10px;\n  width: 30vw;\n  color: rgb(148, 145, 145);\n  border: none;\n}\n", "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;AACrB;;AAEA;EACE,kBAAkB;EAClB,WAAW;EACX,qCAAqC;AACvC;;AAEA;EACE,aAAa;EACb,8BAA8B;AAChC;;AAEA;EACE,aAAa;EACb,8BAA8B;AAChC;;AAEA;EACE,uBAAuB;EACvB,YAAY;EACZ,kBAAkB;EAClB,4BAA4B;AAC9B;;AAEA;EACE,YAAY;EACZ,WAAW;EACX,aAAa;AACf;;AAEA;EACE,qBAAqB;EACrB,UAAU;EACV,SAAS;AACX;;AAEA;EACE,qBAAqB;EACrB,aAAa;EACb,8BAA8B;EAC9B,6BAA6B;EAC7B,aAAa;AACf;;AAEA;EACE,aAAa;EACb,WAAW;EACX,yBAAyB;EACzB,YAAY;AACd","sourcesContent":["body {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\n.newList {\n  border-radius: 5px;\n  width: 30vw;\n  box-shadow: 3px 3px 5px 5px lightgray;\n}\n\n.today {\n  padding: 10px;\n  border-bottom: 1px solid black;\n}\n\n.top {\n  display: flex;\n  border-bottom: 1px solid black;\n}\n\n#eye {\n  background-color: white;\n  border: none;\n  margin-right: 10px;\n  padding: 10px 20px 10px 20px;\n}\n\n#activity {\n  border: none;\n  width: 28vw;\n  padding: 10px;\n}\n\n.ToDoList {\n  list-style-type: none;\n  padding: 0;\n  margin: 0;\n}\n\n.ToDoList li {\n  text-decoration: none;\n  display: flex;\n  justify-content: space-between;\n  border-bottom: 1px solid gray;\n  padding: 10px;\n}\n\n.remove button {\n  padding: 10px;\n  width: 30vw;\n  color: rgb(148, 145, 145);\n  border: none;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -661,13 +661,21 @@ var ToDolist = /*#__PURE__*/function () {
       return _classPrivateFieldGet(this, _toDo);
     }
   }, {
+    key: "reorder",
+    value: function reorder() {
+      for (var index = 0; index < _classPrivateFieldGet(this, _toDo).length; index++) {
+        _classPrivateFieldGet(this, _toDo)[index].id = index;
+      }
+    }
+  }, {
     key: "editToDo",
     value: function editToDo(id, activity, doneBox) {} // Methods
 
   }, {
     key: "AddToDo",
     value: function AddToDo(activity, doneBox) {
-      // const id = `${new Date().getTime()}`;
+      var id = _classPrivateFieldGet(this, _toDo).length;
+
       _classPrivateFieldGet(this, _toDo).push({
         activity: activity,
         doneBox: doneBox,
@@ -679,13 +687,9 @@ var ToDolist = /*#__PURE__*/function () {
     value: function DeleteToDo(id) {
       var localToDo = _classPrivateFieldGet(this, _toDo);
 
-      _classPrivateFieldSet(this, _toDo, localToDo.filter(function (toDo) {
-        if (toDo.id !== id) {
-          return true;
-        }
+      _classPrivateFieldGet(this, _toDo).splice(id, 1);
 
-        return false;
-      }));
+      console.log(id);
     }
   }, {
     key: "SaveToDolistLocal",
@@ -769,6 +773,7 @@ var render = function render() {
     function deleteToDo() {
       var idToDelete = deleteButton.id;
       myToDolist.DeleteToDo(idToDelete);
+      myToDolist.reorder();
       myToDolist.SaveToDolistLocal();
       render();
     }
@@ -780,7 +785,7 @@ var render = function render() {
     element.appendChild(deleteButton);
   };
 
-  for (var index = 0; index < myToDolist.ToDo.length; index++) {
+  for (var index = 0; index < myToDolist.ToDo.length; index += 1) {
     _loop(index);
   }
 };
@@ -795,46 +800,7 @@ button.addEventListener('click', function () {
   myToDolist.SaveToDolistLocal();
   titletextbox.value = '';
   render();
-}); // window.isEditingALi=false;
-// document.addEventListener("click", function(e){ //Of course you can merge this EventListener with the next one but I am separing them just to make things clear for you !
-//   const elementsIdSelector="toEdit";
-//   e=(e||window.event);
-//   e.preventDefault();
-//   const path=e.path;
-//   for(var i=0;i<path.length-4;i++){
-//     if(path[i].tagName=="SPAN"&&path[i].id==elementsIdSelector){
-//       //Found a Li element with the id required ( Even dynamically created li would fires ! )
-//       //Do whatever you want there 
-//       path[i].addEventListener("click", function(){
-//           if(this.getAttribute("contenteditable")!="true"){
-//             const wantEdit=window.confirm("You want to edit this element content ?");
-//             if(wantEdit){
-//               this.setAttribute("contenteditable", true);
-//               window.isEditingALi=this;
-//               this.focus();
-//              }else{
-//               window.isEditingALi=false;
-//              }
-//           }
-//         });
-//     }
-//   }
-// });
-// document.addEventListener("click", function(e){
-//   e=(e||window.event);
-//   e.preventDefault();
-//   const path=e.path;
-//   let canGetReset=true;
-//   for(var i=0;i<path.length-4;i++){
-//     if(path[i]==window.isEditingALi) canGetReset=false;
-//   }
-//   if(canGetReset&&window.isEditingALi){
-//     window.isEditingALi.removeAttribute("contenteditable");
-//     //Here you can add your Ajax request or whatever function you want to do after the user finish editing the li ..
-//     alert("Li has been changed successfully !");
-//     window.isEditingALi=false;
-//   }
-// });
+});
 })();
 
 /******/ })()

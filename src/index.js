@@ -29,7 +29,6 @@ class ToDolist {
 
   // Methods
   AddToDo(activity, doneBox) {
-    // const id = `${new Date().getTime()}`;
     const id = this.#toDo.length;
     this.#toDo.push({
       activity,
@@ -42,13 +41,6 @@ class ToDolist {
     const localToDo = this.#toDo;
     this.#toDo.splice(id, 1);
     console.log(id);
-
-    // this.#toDo = localToDo.filter((toDo) => {
-    //   if (toDo.id !== id) {
-    //     return true;
-    //   }
-    //   return false;
-    // });
   }
 
 
@@ -160,64 +152,3 @@ button.addEventListener('click', () => {
   titletextbox.value = '';
   render();
 });
-
-
-
-
-
-
-
-
-
-
-
-// window.isEditingALi=false;
-
-// document.addEventListener("click", function(e){ //Of course you can merge this EventListener with the next one but I am separing them just to make things clear for you !
-
-//   const elementsIdSelector="toEdit";
-
-//   e=(e||window.event);
-//   e.preventDefault();
-//   const path=e.path;
-//   for(var i=0;i<path.length-4;i++){
-//     if(path[i].tagName=="SPAN"&&path[i].id==elementsIdSelector){
-//       //Found a Li element with the id required ( Even dynamically created li would fires ! )
-      
-//       //Do whatever you want there 
-      
-//       path[i].addEventListener("click", function(){
-//           if(this.getAttribute("contenteditable")!="true"){
-//             const wantEdit=window.confirm("You want to edit this element content ?");
-//             if(wantEdit){
-//               this.setAttribute("contenteditable", true);
-//               window.isEditingALi=this;
-//               this.focus();
-//              }else{
-//               window.isEditingALi=false;
-//              }
-//           }
-//         });
-      
-//     }
-//   }
-// });
-
-// document.addEventListener("click", function(e){
-//   e=(e||window.event);
-//   e.preventDefault();
-//   const path=e.path;
-//   let canGetReset=true;
-//   for(var i=0;i<path.length-4;i++){
-//     if(path[i]==window.isEditingALi) canGetReset=false;
-//   }
-//   if(canGetReset&&window.isEditingALi){
-//     window.isEditingALi.removeAttribute("contenteditable");
-    
-//     //Here you can add your Ajax request or whatever function you want to do after the user finish editing the li ..
-    
-//     alert("Li has been changed successfully !");
-//     window.isEditingALi=false;
-    
-//   }
-// });
