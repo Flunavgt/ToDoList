@@ -667,8 +667,7 @@ var ToDolist = /*#__PURE__*/function () {
   }, {
     key: "AddToDo",
     value: function AddToDo(activity, doneBox) {
-      var id = "".concat(new Date().getTime());
-
+      // const id = `${new Date().getTime()}`;
       _classPrivateFieldGet(this, _toDo).push({
         activity: activity,
         doneBox: doneBox,
@@ -714,11 +713,23 @@ var ToDolist = /*#__PURE__*/function () {
 var myToDolist = new ToDolist();
 myToDolist.LoadToDoFromLocal();
 
+function modificarBox(index, valor) {
+  console.log(index, valor);
+  myToDolist.ToDo[index].doneBox = valor;
+  myToDolist.SaveToDolistLocal();
+}
+
+function modifyDescription(index, valor) {
+  console.log(index, valor);
+  myToDolist.ToDo[index].activity = valor;
+  myToDolist.SaveToDolistLocal();
+}
+
 var render = function render() {
   document.querySelector('.ToDoList').innerHTML = '';
 
   var _loop = function _loop(index) {
-    var toDo = ToDolist.ToDo[index];
+    var toDo = myToDolist.ToDo[index];
     var List = document.querySelector('.ToDoList');
     var element = document.createElement('li');
     element.classList.add('eachToDo');
@@ -727,24 +738,24 @@ var render = function render() {
     var inputTask = document.createElement('input');
     inputTask.type = 'text';
     doneBox.classList.add('doneBox');
-    inputTask.value = toDo.activity + i;
+    inputTask.value = toDo.activity;
     element.append(doneBox, inputTask);
-    doneBox.setAttribute('id', toDo.id); // inputTask.disabled = true;
-
+    doneBox.setAttribute('id', toDo.id);
+    inputTask.disabled = false;
     doneBox.checked = toDo.doneBox;
 
     if (doneBox.checked) {
       inputTask.style.textDecoration = 'line-through';
     }
 
-    inputTask.addEventListener('keypress', function (event) {
-      if (event.key === 'Enter') {
-        console.log('se preciono enter');
-        console.log(inputTask.value);
-      }
+    inputTask.addEventListener('change', function (event) {
+      // if (event.key === 'Enter'){
+      modifyDescription(index, inputTask.value);
+      console.log(inputTask.value); // }
     });
     doneBox.addEventListener('click', function () {
-      //modificarBox(index, doneBox.checked);
+      modificarBox(index, doneBox.checked);
+
       if (doneBox.checked) {
         inputTask.style.textDecoration = 'line-through';
       } else {
@@ -769,7 +780,7 @@ var render = function render() {
     element.appendChild(deleteButton);
   };
 
-  for (var index = 0; index < ToDolist.ToDo.length; index++) {
+  for (var index = 0; index < myToDolist.ToDo.length; index++) {
     _loop(index);
   }
 };

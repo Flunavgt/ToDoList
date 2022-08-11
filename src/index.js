@@ -18,12 +18,19 @@ class ToDolist {
     return this.#toDo;
   }
 
+  reorder() {
+    for (let index = 0; index < this.#toDo.length; index++) {
+      this.#toDo[index].id = index;      
+    }
+  }
+
   editToDo(id, activity, doneBox) {
   }
 
   // Methods
   AddToDo(activity, doneBox) {
     // const id = `${new Date().getTime()}`;
+    const id = this.#toDo.length;
     this.#toDo.push({
       activity,
       doneBox,
@@ -33,13 +40,15 @@ class ToDolist {
 
   DeleteToDo(id) {
     const localToDo = this.#toDo;
+    this.#toDo.splice(id, 1);
+    console.log(id);
 
-    this.#toDo = localToDo.filter((toDo) => {
-      if (toDo.id !== id) {
-        return true;
-      }
-      return false;
-    });
+    // this.#toDo = localToDo.filter((toDo) => {
+    //   if (toDo.id !== id) {
+    //     return true;
+    //   }
+    //   return false;
+    // });
   }
 
 
@@ -77,7 +86,8 @@ function modifyDescription(index, valor){
 
 const render = () => {
   document.querySelector('.ToDoList').innerHTML = '';
-    for (let index = 0; index < myToDolist.ToDo.length; index++) {
+    for (let index = 0; index < myToDolist.ToDo.length; index +=1) {
+     
       const toDo = myToDolist.ToDo[index];
   
       const List = document.querySelector('.ToDoList');
@@ -126,6 +136,7 @@ const render = () => {
       function deleteToDo() {
         const idToDelete = deleteButton.id;
         myToDolist.DeleteToDo(idToDelete);
+        myToDolist.reorder();
         myToDolist.SaveToDolistLocal();
         render();
       }
