@@ -666,10 +666,9 @@ var ToDolist = /*#__PURE__*/function () {
       for (var index = 0; index < _classPrivateFieldGet(this, _toDo).length; index += 1) {
         _classPrivateFieldGet(this, _toDo)[index].id = index;
       }
-    }
-  }, {
-    key: "editToDo",
-    value: function editToDo(id, activity, doneBox) {} // Methods
+    } // editToDo(id, activity, doneBox) {
+    // }
+    // Methods
 
   }, {
     key: "AddToDo",

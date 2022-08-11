@@ -19,7 +19,7 @@ get ToDo() {
 }
 
 reorder() {
-  for (let index = 0; index < this.#toDo.length; index +=1) {
+  for (let index = 0; index < this.#toDo.length; index += 1) {
     this.#toDo[index].id = index;
   }
 }
@@ -38,7 +38,7 @@ AddToDo(activity, doneBox) {
 }
 
 DeleteToDo(id) {
-  const localToDo = this.#toDo;
+  // const localToDo = this.#toDo;
   this.#toDo.splice(id, 1);
 }
 
@@ -93,7 +93,7 @@ const render = () => {
       inputTask.style.textDecoration = 'line-through';
     }
 
-    inputTask.addEventListener('change', (event) => {
+    inputTask.addEventListener('change', () => {
       // if (event.key === 'Enter'){
       modifyDescription(index, inputTask.value);
       // }
@@ -114,6 +114,7 @@ const render = () => {
     // Remove Button
     const deleteButton = document.createElement('button');
 
+    // eslint-disable-next-line
     function deleteToDo() {
       const idToDelete = deleteButton.id;
       myToDolist.DeleteToDo(idToDelete);
