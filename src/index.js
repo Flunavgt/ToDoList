@@ -1,6 +1,7 @@
 // import _ from 'lodash';
 import './style.css';
-import ToDolist from './toDos';
+import ToDolist from './toDos.js';
+
 const removeCompleted = document.querySelector('.removeCompleted');
 
 const myToDolist = new ToDolist();
@@ -72,8 +73,6 @@ const render = () => {
     deleteButton.id = toDo.id;
     element.appendChild(deleteButton);
   }
-
-  
 };
 
 render();
@@ -89,10 +88,10 @@ button.addEventListener('click', () => {
 });
 
 removeCompleted.addEventListener('click', () => {
-const temp = myToDolist.ToDo.filter(({doneBox})=> !doneBox);
+  const temp = myToDolist.ToDo.filter(({ doneBox }) => !doneBox);
 
-myToDolist.SetToDo(temp);
-myToDolist.reorder();
-myToDolist.SaveToDolistLocal();
-render(); 
+  myToDolist.SetToDo(temp);
+  myToDolist.reorder();
+  myToDolist.SaveToDolistLocal();
+  render();
 });

@@ -721,56 +721,12 @@ var __webpack_exports__ = {};
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ "./src/style.css");
-/* harmony import */ var _toDos__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./toDos */ "./src/toDos.js");
+/* harmony import */ var _toDos_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./toDos.js */ "./src/toDos.js");
 // import _ from 'lodash';
 
- // class ToDolist {
-// #toDo;
-// constructor() {
-//   this.#toDo = [];
-// }
-// // Setters
-// SetToDo(toDo) {
-//   this.#toDo = toDo;
-// }
-// // Getter
-// get ToDo() {
-//   return this.#toDo;
-// }
-// reorder() {
-//   for (let index = 0; index < this.#toDo.length; index += 1) {
-//     this.#toDo[index].id = index;
-//   }
-// }
-// // editToDo(id, activity, doneBox) {
-// // }
-// // Methods
-// AddToDo(activity, doneBox) {
-//   const id = this.#toDo.length;
-//   this.#toDo.push({
-//     activity,
-//     doneBox,
-//     id,
-//   });
-// }
-// DeleteToDo(id) {
-//   // const localToDo = this.#toDo;
-//   this.#toDo.splice(id, 1);
-// }
-// SaveToDolistLocal() {
-//   localStorage.setItem('toDo', JSON.stringify(this.#toDo));
-// }
-// LoadToDoFromLocal() {
-//   const savedToDo = JSON.parse(localStorage.getItem('toDo'));
-//   if (Array.isArray(savedToDo)) {
-//     this.#toDo = savedToDo;
-//     return true;
-//   }
-//   return false;
-// }
-// }
 
-var myToDolist = new _toDos__WEBPACK_IMPORTED_MODULE_1__["default"]();
+var removeCompleted = document.querySelector('.removeCompleted');
+var myToDolist = new _toDos_js__WEBPACK_IMPORTED_MODULE_1__["default"]();
 myToDolist.LoadToDoFromLocal();
 
 function modificarBox(index, valor) {
@@ -807,8 +763,7 @@ var render = function render() {
     }
 
     inputTask.addEventListener('change', function () {
-      // if (event.key === 'Enter'){
-      modifyDescription(index, inputTask.value); // }
+      modifyDescription(index, inputTask.value);
     });
     doneBox.addEventListener('click', function () {
       modificarBox(index, doneBox.checked);
@@ -852,6 +807,16 @@ button.addEventListener('click', function () {
   myToDolist.AddToDo(toDop, false);
   myToDolist.SaveToDolistLocal();
   titletextbox.value = '';
+  render();
+});
+removeCompleted.addEventListener('click', function () {
+  var temp = myToDolist.ToDo.filter(function (_ref) {
+    var doneBox = _ref.doneBox;
+    return !doneBox;
+  });
+  myToDolist.SetToDo(temp);
+  myToDolist.reorder();
+  myToDolist.SaveToDolistLocal();
   render();
 });
 })();
