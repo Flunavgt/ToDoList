@@ -10,9 +10,10 @@
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ delButAll)
+/* harmony export */   "default": () => (/* binding */ complete)
 /* harmony export */ });
-function delButAll() {
+var removeCompleted = document.querySelector('.removeCompleted');
+function complete(myToDolist, render) {
   removeCompleted.addEventListener('click', function () {
     var temp = myToDolist.ToDo.filter(function (_ref) {
       var doneBox = _ref.doneBox;
@@ -751,8 +752,8 @@ __webpack_require__.r(__webpack_exports__);
 // import _ from 'lodash';
 
 
+ // const removeCompleted = document.querySelector('.removeCompleted');
 
-var removeCompleted = document.querySelector('.removeCompleted');
 var myToDolist = new _toDos_js__WEBPACK_IMPORTED_MODULE_1__["default"]();
 myToDolist.LoadToDoFromLocal();
 
@@ -835,13 +836,8 @@ button.addEventListener('click', function () {
   myToDolist.SaveToDolistLocal();
   titletextbox.value = '';
   render();
-}); // removeCompleted.addEventListener('click', () => {
-//   const temp = myToDolist.ToDo.filter(({ doneBox }) => !doneBox);
-//   myToDolist.SetToDo(temp);
-//   myToDolist.reorder();
-//   myToDolist.SaveToDolistLocal();
-//   render();
-// });
+});
+(0,_delcomplete_js__WEBPACK_IMPORTED_MODULE_2__["default"])(myToDolist, render);
 })();
 
 /******/ })()
