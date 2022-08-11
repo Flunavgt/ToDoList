@@ -3,20 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wbpack Exercise</title>
+    <!-- Link to FontAwesome page -->
+    <script src="https://kit.fontawesome.com/4e5bc16f7d.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/30e8639a7b.js" crossorigin="anonymous"></script>
+    <title>To Do List</title>
 </head>
 <body>
-    <div class="containerT">
-    <div class="completeList">
-        <div class="info">
-        <p>Today's To Do</p>
+
+    <h1>My To Do List</h1>
+    <div class="newList">
+        <div class="today">Today's To Do</div>
+        <div class="top">
+        <input type="text" name="toDoTitle" id="activity" placeholder="Add to your list...">
+            <button type="submit" id="eye" class="button"> <i class="fa-solid fa-arrow-right-to-bracket"></i></button>
         </div>
-        <input type="text" id="newToDo" placeholder="Add to Your list...">
-    <div class="ToDolistGen"></div>
-    <div class="clear">Clear all completed</div>
-        
+        <ul class="ToDoList">
+           
+        </ul>
+        <div class="remove">
+            <button type="reset">Clear all completed</button>
+        </div>
+ 
     </div>
-</div>
+   
+ 
+
+
+
 
    
 </body>
