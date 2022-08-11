@@ -663,7 +663,7 @@ var ToDolist = /*#__PURE__*/function () {
   }, {
     key: "reorder",
     value: function reorder() {
-      for (var index = 0; index < _classPrivateFieldGet(this, _toDo).length; index++) {
+      for (var index = 0; index < _classPrivateFieldGet(this, _toDo).length; index += 1) {
         _classPrivateFieldGet(this, _toDo)[index].id = index;
       }
     }
@@ -688,8 +688,6 @@ var ToDolist = /*#__PURE__*/function () {
       var localToDo = _classPrivateFieldGet(this, _toDo);
 
       _classPrivateFieldGet(this, _toDo).splice(id, 1);
-
-      console.log(id);
     }
   }, {
     key: "SaveToDolistLocal",
@@ -718,13 +716,11 @@ var myToDolist = new ToDolist();
 myToDolist.LoadToDoFromLocal();
 
 function modificarBox(index, valor) {
-  console.log(index, valor);
   myToDolist.ToDo[index].doneBox = valor;
   myToDolist.SaveToDolistLocal();
 }
 
 function modifyDescription(index, valor) {
-  console.log(index, valor);
   myToDolist.ToDo[index].activity = valor;
   myToDolist.SaveToDolistLocal();
 }
@@ -754,8 +750,7 @@ var render = function render() {
 
     inputTask.addEventListener('change', function (event) {
       // if (event.key === 'Enter'){
-      modifyDescription(index, inputTask.value);
-      console.log(inputTask.value); // }
+      modifyDescription(index, inputTask.value); // }
     });
     doneBox.addEventListener('click', function () {
       modificarBox(index, doneBox.checked);
@@ -778,7 +773,7 @@ var render = function render() {
       render();
     }
 
-    deleteButton.innerHTML = "<i class=\"fa-solid fa-trash-can\"></i>";
+    deleteButton.innerHTML = '<i class="fa-solid fa-trash-can"></i>';
     deleteButton.classList.add('delButton');
     deleteButton.onclick = deleteToDo;
     deleteButton.id = toDo.id;
