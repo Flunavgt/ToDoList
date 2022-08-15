@@ -4,7 +4,7 @@
   "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
   "private": "true",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d dist",
     "build": "webpack",
     "start": "webpack serve --open"
   },
@@ -16,7 +16,7 @@
   "author": "",
   "license": "ISC",
   "bugs": {},
-  "homepage": "https://github.com/Flunavgt/ToDoList#readme",
+  "homepage": "https://flunavgt.github.io/ToDoList/",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.5",
@@ -38,6 +38,7 @@
   "dependencies": {
     "@babel/core": "^7.18.10",
     "@babel/preset-env": "^7.18.10",
+    "gh-pages": "^4.0.0",
     "lodash": "^4.17.21"
   }
 }
