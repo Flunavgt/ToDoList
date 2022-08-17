@@ -13,7 +13,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link soon](https://livedemo.com)
+[Live Demo Link](https://flunavgt.github.io/ToDoList/)
 
 ## Getting Started
 
