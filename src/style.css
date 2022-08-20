@@ -2,12 +2,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: rgb(196, 248, 248);
 }
 
 .newList {
   border-radius: 5px;
-  width: 30vw;
+  width: 60vw;
   box-shadow: 3px 3px 5px 5px lightgray;
+  background-color: bisque;
 }
 
 .today {
@@ -29,7 +31,7 @@ body {
 
 #activity {
   border: none;
-  width: 28vw;
+  width: 60vw;
   padding: 10px;
 }
 
@@ -49,7 +51,7 @@ body {
 
 .remove button {
   padding: 10px;
-  width: 30vw;
-  color: rgb(148, 145, 145);
+  width: 60vw;
+  color: rgb(129, 116, 116);
   border: none;
 }
