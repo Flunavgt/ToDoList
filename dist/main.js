@@ -157,7 +157,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "body {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  background-color: rgb(196, 248, 248);\n}\n\n.newList {\n  border-radius: 5px;\n  width: 60vw;\n  box-shadow: 3px 3px 5px 5px lightgray;\n  background-color: bisque;\n}\n\n.today {\n  padding: 10px;\n  border-bottom: 1px solid black;\n}\n\n.top {\n  display: flex;\n  border-bottom: 1px solid black;\n}\n\n#eye {\n  background-color: white;\n  border: none;\n  margin-right: 10px;\n  padding: 10px 20px 10px 20px;\n}\n\n#activity {\n  border: none;\n  width: 60vw;\n  padding: 10px;\n}\n\n.ToDoList {\n  list-style-type: none;\n  padding: 0;\n  margin: 0;\n}\n\n.ToDoList li {\n  text-decoration: none;\n  display: flex;\n  justify-content: space-between;\n  border-bottom: 1px solid gray;\n  padding: 10px;\n}\n\n.remove button {\n  padding: 10px;\n  width: 60vw;\n  color: rgb(129, 116, 116);\n  border: none;\n}\n", "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,oCAAoC;AACtC;;AAEA;EACE,kBAAkB;EAClB,WAAW;EACX,qCAAqC;EACrC,wBAAwB;AAC1B;;AAEA;EACE,aAAa;EACb,8BAA8B;AAChC;;AAEA;EACE,aAAa;EACb,8BAA8B;AAChC;;AAEA;EACE,uBAAuB;EACvB,YAAY;EACZ,kBAAkB;EAClB,4BAA4B;AAC9B;;AAEA;EACE,YAAY;EACZ,WAAW;EACX,aAAa;AACf;;AAEA;EACE,qBAAqB;EACrB,UAAU;EACV,SAAS;AACX;;AAEA;EACE,qBAAqB;EACrB,aAAa;EACb,8BAA8B;EAC9B,6BAA6B;EAC7B,aAAa;AACf;;AAEA;EACE,aAAa;EACb,WAAW;EACX,yBAAyB;EACzB,YAAY;AACd","sourcesContent":["body {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  background-color: rgb(196, 248, 248);\n}\n\n.newList {\n  border-radius: 5px;\n  width: 60vw;\n  box-shadow: 3px 3px 5px 5px lightgray;\n  background-color: bisque;\n}\n\n.today {\n  padding: 10px;\n  border-bottom: 1px solid black;\n}\n\n.top {\n  display: flex;\n  border-bottom: 1px solid black;\n}\n\n#eye {\n  background-color: white;\n  border: none;\n  margin-right: 10px;\n  padding: 10px 20px 10px 20px;\n}\n\n#activity {\n  border: none;\n  width: 60vw;\n  padding: 10px;\n}\n\n.ToDoList {\n  list-style-type: none;\n  padding: 0;\n  margin: 0;\n}\n\n.ToDoList li {\n  text-decoration: none;\n  display: flex;\n  justify-content: space-between;\n  border-bottom: 1px solid gray;\n  padding: 10px;\n}\n\n.remove button {\n  padding: 10px;\n  width: 60vw;\n  color: rgb(129, 116, 116);\n  border: none;\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "body {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  background-color: rgb(196, 248, 248);\n}\n\n.newList {\n  border-radius: 5px;\n  width: 60vw;\n  box-shadow: 3px 3px 5px 5px lightgray;\n  background-color: bisque;\n}\n\n.today {\n  padding: 10px;\n  border-bottom: 1px solid black;\n}\n\n.top {\n  display: flex;\n  border-bottom: 1px solid black;\n}\n\n#eye {\n  background-color: white;\n  border: none;\n  margin-right: 10px;\n  padding: 10px 20px 10px 20px;\n}\n\n#activity {\n  border: none;\n  width: 60vw;\n  padding: 10px;\n}\n\n.ToDoList {\n  list-style-type: none;\n  padding: 0;\n  margin: 0;\n}\n\n.ToDoList li {\n  text-decoration: none;\n  display: flex;\n  justify-content: space-between;\n  border-bottom: 1px solid gray;\n  padding: 10px;\n}\n\n.myNewTD {\n  width: 70%;\n}\n\n.remove button {\n  padding: 10px;\n  width: 60vw;\n  color: rgb(129, 116, 116);\n  border: none;\n}\n", "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,oCAAoC;AACtC;;AAEA;EACE,kBAAkB;EAClB,WAAW;EACX,qCAAqC;EACrC,wBAAwB;AAC1B;;AAEA;EACE,aAAa;EACb,8BAA8B;AAChC;;AAEA;EACE,aAAa;EACb,8BAA8B;AAChC;;AAEA;EACE,uBAAuB;EACvB,YAAY;EACZ,kBAAkB;EAClB,4BAA4B;AAC9B;;AAEA;EACE,YAAY;EACZ,WAAW;EACX,aAAa;AACf;;AAEA;EACE,qBAAqB;EACrB,UAAU;EACV,SAAS;AACX;;AAEA;EACE,qBAAqB;EACrB,aAAa;EACb,8BAA8B;EAC9B,6BAA6B;EAC7B,aAAa;AACf;;AAEA;EACE,UAAU;AACZ;;AAEA;EACE,aAAa;EACb,WAAW;EACX,yBAAyB;EACzB,YAAY;AACd","sourcesContent":["body {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  background-color: rgb(196, 248, 248);\n}\n\n.newList {\n  border-radius: 5px;\n  width: 60vw;\n  box-shadow: 3px 3px 5px 5px lightgray;\n  background-color: bisque;\n}\n\n.today {\n  padding: 10px;\n  border-bottom: 1px solid black;\n}\n\n.top {\n  display: flex;\n  border-bottom: 1px solid black;\n}\n\n#eye {\n  background-color: white;\n  border: none;\n  margin-right: 10px;\n  padding: 10px 20px 10px 20px;\n}\n\n#activity {\n  border: none;\n  width: 60vw;\n  padding: 10px;\n}\n\n.ToDoList {\n  list-style-type: none;\n  padding: 0;\n  margin: 0;\n}\n\n.ToDoList li {\n  text-decoration: none;\n  display: flex;\n  justify-content: space-between;\n  border-bottom: 1px solid gray;\n  padding: 10px;\n}\n\n.myNewTD {\n  width: 70%;\n}\n\n.remove button {\n  padding: 10px;\n  width: 60vw;\n  color: rgb(129, 116, 116);\n  border: none;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -779,6 +779,7 @@ var render = function render() {
     doneBox.type = 'checkbox';
     var inputTask = document.createElement('input');
     inputTask.type = 'text';
+    inputTask.classList.add('myNewTD');
     doneBox.classList.add('doneBox');
     inputTask.value = toDo.activity;
     element.append(doneBox, inputTask);
@@ -828,14 +829,20 @@ var render = function render() {
 
 render(); // Controller
 
-var button = document.querySelector('.button');
-button.addEventListener('click', function () {
-  var titletextbox = document.getElementById('activity');
-  var toDop = titletextbox.value;
-  myToDolist.AddToDo(toDop, false);
-  myToDolist.SaveToDolistLocal();
-  titletextbox.value = '';
-  render();
+var button = document.querySelector('html'); // const inputTask = document.querySelector('.myNewTD');
+
+button.addEventListener('keyup', function (event) {
+  console.log('this click');
+
+  if (event.key === 'Enter') {
+    event.preventDefault();
+    var titletextbox = document.getElementById('activity');
+    var toDop = titletextbox.value;
+    myToDolist.AddToDo(toDop, false);
+    myToDolist.SaveToDolistLocal();
+    titletextbox.value = '';
+    render();
+  }
 });
 (0,_delcomplete_js__WEBPACK_IMPORTED_MODULE_2__["default"])(myToDolist, render);
 })();

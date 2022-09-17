@@ -31,6 +31,7 @@ const render = () => {
     doneBox.type = 'checkbox';
     const inputTask = document.createElement('input');
     inputTask.type = 'text';
+    inputTask.classList.add('myNewTD');
     doneBox.classList.add('doneBox');
     inputTask.value = toDo.activity;
     element.append(doneBox, inputTask);
@@ -78,14 +79,19 @@ const render = () => {
 
 render();
 // Controller
-const button = document.querySelector('.button');
-button.addEventListener('click', () => {
-  const titletextbox = document.getElementById('activity');
-  const toDop = titletextbox.value;
-  myToDolist.AddToDo(toDop, false);
-  myToDolist.SaveToDolistLocal();
-  titletextbox.value = '';
-  render();
+const button = document.querySelector('html');
+// const inputTask = document.querySelector('.myNewTD');
+button.addEventListener('keyup', (event) => {
+  console.log('this click');
+  if (event.key === 'Enter') {
+    event.preventDefault();
+    const titletextbox = document.getElementById('activity');
+    const toDop = titletextbox.value;
+    myToDolist.AddToDo(toDop, false);
+    myToDolist.SaveToDolistLocal();
+    titletextbox.value = '';
+    render();
+  }
 });
 
 complete(myToDolist, render);
